@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"a1_ledblink\stm32f4xx_it.o"
+"a1_ledblink\stm32f4xx_hal_msp.o"
+"a1_ledblink\main.o"
+"a1_ledblink\stm32f4xx_hal_pwr.o"
+"a1_ledblink\stm32f4xx_hal.o"
+"a1_ledblink\stm32f4xx_hal_pwr_ex.o"
+"a1_ledblink\stm32f4xx_hal_tim_ex.o"
+"a1_ledblink\stm32f4xx_hal_gpio.o"
+"a1_ledblink\stm32f4xx_hal_flash.o"
+"a1_ledblink\stm32f4xx_hal_flash_ramfunc.o"
+"a1_ledblink\stm32f4xx_hal_dma.o"
+"a1_ledblink\stm32f4xx_hal_cortex.o"
+"a1_ledblink\stm32f4xx_hal_tim.o"
+"a1_ledblink\stm32f4xx_hal_flash_ex.o"
+"a1_ledblink\stm32f4xx_hal_rcc_ex.o"
+"a1_ledblink\stm32f4xx_hal_rcc.o"
+"a1_ledblink\stm32f4xx_hal_dma_ex.o"
+"a1_ledblink\system_stm32f4xx.o"
+"a1_ledblink\startup_stm32f407xx.o"
+--library_type=microlib --strict --scatter "A1_LedBlink\A1_LedBlink.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "A1_LedBlink.map" -o A1_LedBlink\A1_LedBlink.axf
